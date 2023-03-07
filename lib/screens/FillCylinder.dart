@@ -18,11 +18,9 @@ class _FillCylinderState extends State<FillCylinder> {
       ),
       body: SingleChildScrollView(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            ElevatedButton(
-              onPressed: () {},
-              child: const Text("TAP TO SCAN"),
-            ),
+            ElevatedButton(onPressed: () {}, child: const Text("TAP TO SCAN")),
           ],
         ),
       ),

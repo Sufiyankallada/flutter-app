@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:model2/screens/homepage.dart';
 
 import '../reusables.dart';
 
@@ -47,7 +48,10 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(
                 height: 30,
               ),
-              signInSignUpButton("Login", context, () {}),
+              signInSignUpButton("Login", context, () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const HomePage()));
+              }),
             ],
           ),
         ),
